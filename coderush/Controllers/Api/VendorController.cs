@@ -37,6 +37,9 @@ namespace coderush.Controllers.Api
         public IActionResult Insert([FromBody]CrudViewModel<Vendor> payload)
         {
             Vendor vendor = payload.value;
+
+            vendor.VendorTypeId = 1;
+
             _context.Vendor.Add(vendor);
             _context.SaveChanges();
             return Ok(vendor);

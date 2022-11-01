@@ -30,13 +30,21 @@
 
             <li class="header">Báo cáo</li>
 
-            <li  class="@Html.IsSelected(controller: "Customer")">
-                <a href="/Customer/Index">
+            <li  >
+                <a >
                     <i class="fa fa-book"></i> <span>Báo cáo tồn</span>
                 </a>
             </li>
 
              <li class="header">Kho</li>
+
+
+            <li class="@Html.IsSelected(controller: "Customer")">
+                <a href="/Customer/Index">
+                    <i class="fa fa-users"></i> <span>Khách hàng</span>
+                </a>
+            </li>
+            
 
               <li  class="@Html.IsSelected(controller: "Product")">
                 <a href="/Product/Index">

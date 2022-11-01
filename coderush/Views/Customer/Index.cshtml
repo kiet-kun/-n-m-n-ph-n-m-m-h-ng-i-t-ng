@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Customer";
+    ViewData["Title"] = "Khách hàng";
 }
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -90,15 +90,17 @@
                     pageSettings: { pageSize: 10, printMode: ej.Grid.PrintMode.CurrentPage },
                     columns: [
                         { field: "CustomerId", headerText: 'Customer Id', isPrimaryKey: true, isIdentity: true, visible: false },
-                        { field: "CustomerName", headerText: 'Customer Name', validationRules: { required: true } },
-                        { field: "CustomerTypeId", headerText: 'Customer Type', foreignKeyField: "CustomerTypeId", foreignKeyValue: "CustomerTypeName", dataSource: dataManagerCustomerType },
-                        { field: "Address", headerText: 'Address', },
-                        { field: "City", headerText: 'City', },
-                        { field: "State", headerText: 'State', },
-                        { field: "ZipCode", headerText: 'ZipCode', },
-                        { field: "Phone", headerText: 'Phone', },
+                        { field: "CustomerName", headerText: 'Tên', validationRules: { required: true } },
+                        { field: "CustomerTypeId", headerText: 'Customer Type', foreignKeyField: "CustomerTypeId", foreignKeyValue: "CustomerTypeName", dataSource: dataManagerCustomerType,
+                            visible: false
+                        },
+                        { field: "Address", headerText: 'Địa chỉ', },
+                        { field: "City", headerText: 'Thành phố', },
+                        { field: "State", headerText: 'State', visible: false },
+                        { field: "ZipCode", headerText: 'ZipCode', visible: false },
+                        { field: "Phone", headerText: 'Số điện thoại', },
                         { field: "Email", headerText: 'Email', },
-                        { field: "ContactPerson", headerText: 'CP', },
+                        { field: "ContactPerson", headerText: 'CP', visible: false },
                     ],
                     actionComplete: "complete",
                 });

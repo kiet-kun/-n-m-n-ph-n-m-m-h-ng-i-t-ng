@@ -105,15 +105,29 @@
                     pageSettings: { pageSize: 10, printMode: ej.Grid.PrintMode.CurrentPage },
                     columns: [
                         { headerText: 'Chi tiết', template: "<a href='/SalesOrder/Detail/{{:SalesOrderId}}'>Chi tiết</a>" },
-                        { field: "SalesOrderId", headerText: 'SO Id', isPrimaryKey: true, isIdentity: true, visible: false },
+                        { field: "SalesOrderId", headerText: 'SO Id', isPrimaryKey: true, isIdentity: true, 
+                            visible: false 
+                        },
                         { field: "SalesOrderName", headerText: 'Mã', allowEditing: false },
-                        { field: "BranchId", headerText: 'Chi nhánh', visible: false, foreignKeyField: "BranchId", foreignKeyValue: "BranchName", dataSource: dataManagerBranch, validationRules: { required: true } },
+                        {
+                            field: "BranchId", headerText: 'Chi nhánh', foreignKeyField: "BranchId", foreignKeyValue: "BranchName", dataSource: dataManagerBranch,
+                            //validationRules: { required: true } , 
+                            visible: false
+                        },
                         { field: "CustomerId", headerText: 'Khách hàng', foreignKeyField: "CustomerId", foreignKeyValue: "CustomerName", dataSource: dataManagerCustomer, validationRules: { required: true } },
                         { field: "OrderDate", headerText: 'Ngày đặt', editType: "datepicker", format: "{0:MM/dd/yyyy}", validationRules: { required: true } },
                         { field: "DeliveryDate", headerText: 'Ngày giao', editType: "datepicker", format: "{0:MM/dd/yyyy}", validationRules: { required: true } },
-                        { field: "SalesTypeId", headerText: 'Loại xuất kho', visible: false, foreignKeyField: "SalesTypeId", foreignKeyValue: "SalesTypeName", dataSource: dataManagerSalesType },
-                        { field: "CurrencyId", headerText: 'Tiền tệ', visible: false, allowEditing: false, foreignKeyField: "CurrencyId", foreignKeyValue: "CurrencyName", dataSource: dataManagerCurrency },
-                        { field: "CustomerRefNumber", headerText: 'Cust. Ref#', visible: false },
+                        {
+                            field: "SalesTypeId", headerText: 'Loại xuất kho', foreignKeyField: "SalesTypeId", foreignKeyValue: "SalesTypeName", dataSource: dataManagerSalesType
+                            ,visible: false
+                        },
+                        {
+                            field: "CurrencyId", headerText: 'Tiền tệ', allowEditing: false, foreignKeyField: "CurrencyId", foreignKeyValue: "CurrencyName", dataSource: dataManagerCurrency,   
+                            visible: false
+                        },
+                        { field: "CustomerRefNumber", headerText: 'Cust. Ref#', 
+                            visible: false 
+                        },
                         { field: "Freight", headerText: 'Phí vận chuyển', defaultValue: 0, editType: "numericedit", format: "{0:n2}" },
                     ],
                     actionComplete: "complete",

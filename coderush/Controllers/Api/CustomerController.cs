@@ -38,6 +38,9 @@ namespace coderush.Controllers.Api
         public IActionResult Insert([FromBody]CrudViewModel<Customer> payload)
         {
             Customer customer = payload.value;
+
+            customer.CustomerTypeId = 1;
+
             _context.Customer.Add(customer);
             _context.SaveChanges();
             return Ok(customer);

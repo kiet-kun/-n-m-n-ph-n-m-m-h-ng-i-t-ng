@@ -261,7 +261,9 @@
                     { field: "PurchaseOrderLineId", headerText: 'Line Id', isPrimaryKey: true, isIdentity: true, visible: false },
                     { field: "PurchaseOrderId", headerText: 'PO#', defaultValue: @Model.PurchaseOrderId, foreignKeyField: "PurchaseOrderId", foreignKeyValue: "PurchaseOrderName", dataSource: dataManagerPurchaseOrder, visible: false },
                     { field: "ProductId", headerText: 'Hàng hóa', foreignKeyField: "ProductId", foreignKeyValue: "ProductName", dataSource: dataManagerProduct },
-                    { field: "Description", headerText: 'Mô tả' },
+                    { field: "Description", headerText: 'Mô tả',
+                            visible: false
+                    },
                     { field: "Quantity", headerText: 'Số lượng', defaultValue: 1, editType: "numericedit", format: "{0:n2}" },
                     { field: "Price", headerText: 'Giá', defaultValue: 0, editType: "numericedit", format: "{0:n2}" },
                     { field: "Amount", headerText: 'Số lượng', defaultValue: 0, allowEditing: false, editType: "numericedit", format: "{0:n2}" },

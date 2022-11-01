@@ -115,6 +115,11 @@ namespace coderush.Controllers.Api
         public IActionResult Insert([FromBody]CrudViewModel<PurchaseOrder> payload)
         {
             PurchaseOrder purchaseOrder = payload.value;
+
+            purchaseOrder.BranchId = 1;
+            purchaseOrder.PurchaseTypeId = 1;
+            purchaseOrder.CurrencyId = 1;
+
             purchaseOrder.PurchaseOrderName = _numberSequence.GetNumberSequence("PO");
             _context.PurchaseOrder.Add(purchaseOrder);
             _context.SaveChanges();
