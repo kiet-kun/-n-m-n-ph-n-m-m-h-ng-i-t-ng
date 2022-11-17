@@ -1,0 +1,38 @@
+﻿@model QuanLyKho.Model.ViewModel.UnitOfMeasure.CreateUnitOfMeasureViewModel
+@{
+    ViewData["Title"] = "Create UnitOfMeasure";
+}
+@section script{
+    <partial name="~/Views/Shared/_FormScriptsPartial.cshtml" />
+}
+<section class="content pt-2">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Thêm đơn vị</h3>
+                    </div>
+                    <form asp-action="Create" asp-antiforgery="true" id="frmCreate">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="UnitOfMeasureName">Tên</label>
+                                <input asp-for="UnitOfMeasureName" type="text" class="form-control">
+                                <span asp-validation-for="UnitOfMeasureName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Isocode">Kí hiệu</label>
+                                <input asp-for="Isocode" type="text" class="form-control">
+                                <span asp-validation-for="Isocode" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right">
+                            <a class="btn btn-default" href="/UnitOfMeasure">Quay lại</a>
+                            <button id="btnSave" type="submit" class="btn btn-primary">Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

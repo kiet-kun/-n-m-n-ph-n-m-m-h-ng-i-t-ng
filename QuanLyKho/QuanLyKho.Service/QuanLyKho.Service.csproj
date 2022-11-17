@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyKho.Common\QuanLyKho.Common.csproj" />
+    <ProjectReference Include="..\QuanLyKho.Core\QuanLyKho.Core.csproj" />
+    <ProjectReference Include="..\QuanLyKho.Model\QuanLyKho.Model.csproj" />
+    <ProjectReference Include="..\QuanLyKho.Repository\QuanLyKho.Repository.csproj" />
+    <ProjectReference Include="..\QuanLyKho.UnitOfWork\QuanLyKho.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>

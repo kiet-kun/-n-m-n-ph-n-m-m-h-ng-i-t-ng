@@ -1,0 +1,168 @@
+﻿@model QuanLyKho.Model.ViewModel.Transaction.SearchTransactionViewModel
+@{
+    ViewData["Title"] = "Transaction List";
+}
+<section class="content pt-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h3 class="card-title">Bộ lọc</h3>
+                    </div>
+                    <div class="card-body dataTable-search-form">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label asp-for="TransactionCode">Mã</label>
+                                    <input asp-for="TransactionCode" type="text" class="form-control-sm form-control enter-keyup">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label asp-for="SearchStartDate">Ngày bắt đầu</label>
+                                    <input asp-for="SearchStartDate" type="text" class="form-control-sm form-control enter-keyup datepicker">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label asp-for="SearchEndDate">Ngày kết thúc</label>
+                                    <input asp-for="SearchEndDate" type="text" class="form-control-sm form-control enter-keyup datepicker">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label asp-for="TransactionTypeId">Loại</label>
+                                    <select asp-for="TransactionTypeId" class="form-control form-control-sm" asp-items="Html.GetEnumSelectList<QuanLyKho.Common.Enums.TransactionType>()">
+                                        <option value="">Chọn</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label asp-for="StoreId">Từ cửa hàng</label>
+                                    <select asp-for="StoreId" class="form-control form-control-sm" asp-items="Model.StoreList">
+                                        <option value="">Chọn</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label asp-for="ToStoreId">Đến cửa hàng</label>
+                                    <select asp-for="ToStoreId" class="form-control form-control-sm" asp-items="Model.ToStoreList">
+                                        <option value="">Chọn</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                <button id="btnClear" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-sync-alt"></i> Đặt lại bộ lọc</button>
+                                <button id="btnFilter" type="button" class="btn btn-primary btn-sm"><i class="fas fa-search"></i> Lọc</button>
+                                <a class="btn btn-sm btn-info" href="/Transaction/Create?typeId=1"><i class="fas fa-plus"></i> Nhập kho</a>
+                                <a class="btn btn-sm btn-info" href="/Transaction/Create?typeId=2"><i class="fas fa-plus"></i> Xuất kho</a>
+                                <a class="btn btn-sm btn-info" href="/Transaction/Create?typeId=3"><i class="fas fa-plus"></i> Chuyển hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h3 class="card-title">Danh sách nhập/xuất kho</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="datatable" class="table table-bordered table-hover dt-responsive nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>Mã</th>
+                                    <th>Loại</th>
+                                    <th>Ngày</th>
+                                    <th>Kho</th>
+                                    <th>Đến kho</th>
+                                    <th style="width:15%">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Mã</th>
+                                    <th>Loại</th>
+                                    <th>Ngày</th>
+                                    <th>Kho</th>
+                                    <th>Đến kho</th>
+                                    <th style="width:15%">Thao tác</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="modal-detail">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Phiếu nhập xuất/xuất kho</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-sm" id="tbl-transaction-detail">
+                            <thead>
+                                <tr>
+                                    <th>Hàng hóa</th>
+                                    <th>Số lượng</th>
+                                    <th>Đơn vị</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section style{
+    <partial name="~/Views/Shared/_DataTableStylePartial.cshtml" />
+    <link href="~/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet">
+
+
+}
+@section script{
+    <partial name="~/Views/Shared/_DataTableScriptPartial.cshtml" />
+    <script src="~/plugins/moment/moment.min.js"></script>
+    <script src="~/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="~/pages/transaction/transaction-list.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.datepicker').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true
+            });
+            $('.datepicker').val('');
+        });
+
+    </script>
+}
+
