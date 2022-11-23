@@ -90,10 +90,28 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Barcode = "EX01",
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 986, DateTimeKind.Local).AddTicks(7807),
+                            Barcode = "MAVACH01",
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 549, DateTimeKind.Local).AddTicks(1289),
                             Price = 1m,
-                            ProductName = "Example Product",
+                            ProductName = "Áo sơ mi",
+                            UnitOfMeasureId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Barcode = "MAVACH02",
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 549, DateTimeKind.Local).AddTicks(2412),
+                            Price = 1m,
+                            ProductName = "Áo thun",
+                            UnitOfMeasureId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Barcode = "MAVACH03",
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 549, DateTimeKind.Local).AddTicks(2438),
+                            Price = 1m,
+                            ProductName = "Áo khoác",
                             UnitOfMeasureId = 1
                         });
                 });
@@ -128,9 +146,16 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 986, DateTimeKind.Local).AddTicks(2780),
-                            StoreCode = "EX01",
-                            StoreName = "Example Store"
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 548, DateTimeKind.Local).AddTicks(6477),
+                            StoreCode = "CUAHANG01",
+                            StoreName = "Cửa hàng chi nhánh Gò Vấp"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 548, DateTimeKind.Local).AddTicks(6557),
+                            StoreCode = "CUAHANG02",
+                            StoreName = "Cửa hàng chi nhánh Quận 1"
                         });
                 });
 
@@ -235,20 +260,20 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 980, DateTimeKind.Local).AddTicks(9377),
-                            TransactionTypeName = "Stock Receipt"
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 537, DateTimeKind.Local).AddTicks(1830),
+                            TransactionTypeName = "Nhập kho"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 981, DateTimeKind.Local).AddTicks(5532),
-                            TransactionTypeName = "Stock Out"
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 538, DateTimeKind.Local).AddTicks(2940),
+                            TransactionTypeName = "Xuất kho"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 981, DateTimeKind.Local).AddTicks(5550),
-                            TransactionTypeName = "Transfer"
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 538, DateTimeKind.Local).AddTicks(2983),
+                            TransactionTypeName = "Chuyển hàng"
                         });
                 });
 
@@ -282,23 +307,23 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 982, DateTimeKind.Local).AddTicks(6243),
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 539, DateTimeKind.Local).AddTicks(7915),
                             Isocode = "pc",
-                            UnitOfMeasureName = "Piece"
+                            UnitOfMeasureName = "Mẩu"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 982, DateTimeKind.Local).AddTicks(6369),
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 539, DateTimeKind.Local).AddTicks(8200),
                             Isocode = "kg",
-                            UnitOfMeasureName = "Kilogram"
+                            UnitOfMeasureName = "Kilôgram"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 982, DateTimeKind.Local).AddTicks(6374),
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 539, DateTimeKind.Local).AddTicks(8207),
                             Isocode = "m",
-                            UnitOfMeasureName = "Meter"
+                            UnitOfMeasureName = "Mét"
                         });
                 });
 
@@ -334,6 +359,9 @@ namespace QuanLyKho.Data.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<string>("cmnd")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
@@ -345,7 +373,7 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 2, 17, 44, 31, 986, DateTimeKind.Local).AddTicks(644),
+                            CreateDate = new DateTime(2022, 11, 22, 9, 36, 31, 548, DateTimeKind.Local).AddTicks(2230),
                             Email = "admin@admin.com",
                             Name = "Admin",
                             Password = "827ccb0eea8a706c4c34a16891f84e7b",

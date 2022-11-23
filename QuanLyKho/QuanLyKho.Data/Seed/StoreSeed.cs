@@ -12,8 +12,8 @@ namespace QuanLyKho.Data.Seed
         public void Configure(EntityTypeBuilder<Store> builder)
         {
             builder.HasData(
-                    new Store { Id = 1, StoreCode = "CUAHANG01", StoreName = "Cửa hàng A", CreateDate = DateTime.Now },
-                    new Store { Id = 2, StoreCode = "CUAHANG02", StoreName = "Cửa hàng B", CreateDate = DateTime.Now }
+                    new Store { Id = 1, StoreCode = "CUAHANG01", StoreName = "Cửa hàng chi nhánh Gò Vấp", CreateDate = DateTime.Now },
+                    new Store { Id = 2, StoreCode = "CUAHANG02", StoreName = "Cửa hàng chi nhánh Quận 1", CreateDate = DateTime.Now }
                 );
            
         }
