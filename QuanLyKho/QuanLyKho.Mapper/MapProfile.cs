@@ -15,6 +15,7 @@ using QuanLyKho.Model.ViewModel.Store;
 using QuanLyKho.Model.ViewModel.Transaction;
 using QuanLyKho.Model.ViewModel.UnitOfMeasure;
 using QuanLyKho.Model.ViewModel.User;
+using QuanLyKho.Model.ViewModel.NhaCungCap;
 
 namespace QuanLyKho.Mapper
 {
@@ -24,6 +25,18 @@ namespace QuanLyKho.Mapper
         {
             #region DTO & ViewModel
             CreateMap<ServiceResult, JsonResultModel>();
+
+            //NhaCungCap
+            CreateMap<CreateNhaCungCapViewModel, NhaCungCapDTO>();
+            CreateMap<SearchNhaCungCapViewModel, NhaCungCapDTO>()
+                   .ForMember(dm => dm.PageNumber, vm => vm.MapFrom(vmf => vmf.iDisplayStart))
+                   .ForMember(dm => dm.RecordCount, vm => vm.MapFrom(vmf => vmf.iDisplayLength));
+            CreateMap<NhaCungCapDTO, ListNhaCungCapViewModel>();
+            CreateMap<NhaCungCapDTO, EditNhaCungCapViewModel>();
+            CreateMap<EditNhaCungCapViewModel, NhaCungCapDTO>();
+            CreateMap<NhaCungCapDTO, SelectListItem>()
+                   .ForMember(dm => dm.Value, vm => vm.MapFrom(vmf => vmf.Id.ToString()))
+                   .ForMember(dm => dm.Text, vm => vm.MapFrom(vmf => vmf.TenNhaCungCap));
 
 
             CreateMap<CreateCategoryViewModel, CategoryDTO>();
@@ -119,6 +132,10 @@ namespace QuanLyKho.Mapper
             #endregion
 
             #region Entity & DTO
+            //NhaCungCap
+            CreateMap<NhaCungCap, NhaCungCapDTO>();
+            CreateMap<NhaCungCapDTO, NhaCungCap>();
+
             CreateMap<Category, CategoryDTO>();
             CreateMap<CategoryDTO, Category>();
 

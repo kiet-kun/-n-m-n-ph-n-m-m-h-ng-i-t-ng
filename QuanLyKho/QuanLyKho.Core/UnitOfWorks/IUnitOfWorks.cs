@@ -17,6 +17,8 @@ namespace QuanLyKho.Core.UnitOfWorks
         ITransactionTypeRepository TransactionTypeRepository { get; }
         IUnitOfMeasureRepository UnitOfMeasureRepository { get; }
         IUserRepository UserRepository { get; }
+
+        INhaCungCapRepository NhaCungCapRepository { get; }
         Task SaveAsync();
         void Save();
         void Commit();

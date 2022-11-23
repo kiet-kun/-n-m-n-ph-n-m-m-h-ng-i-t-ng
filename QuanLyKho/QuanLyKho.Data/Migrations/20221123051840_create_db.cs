@@ -22,6 +22,24 @@ namespace QuanLyKho.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "NhaCungCap",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TenNhaCungCap = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DiaChi = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SoDienThoai = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NguoiDaiDien = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_NhaCungCap", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Store",
                 columns: table => new
                 {
@@ -207,8 +225,8 @@ namespace QuanLyKho.Data.Migrations
                 columns: new[] { "Id", "CreateDate", "StoreCode", "StoreName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2022, 11, 22, 9, 36, 31, 548, DateTimeKind.Local).AddTicks(6477), "CUAHANG01", "Cửa hàng chi nhánh Gò Vấp" },
-                    { 2, new DateTime(2022, 11, 22, 9, 36, 31, 548, DateTimeKind.Local).AddTicks(6557), "CUAHANG02", "Cửa hàng chi nhánh Quận 1" }
+                    { 1, new DateTime(2022, 11, 23, 12, 18, 39, 663, DateTimeKind.Local).AddTicks(5729), "CUAHANG01", "Cửa hàng chi nhánh Gò Vấp" },
+                    { 2, new DateTime(2022, 11, 23, 12, 18, 39, 663, DateTimeKind.Local).AddTicks(5780), "CUAHANG02", "Cửa hàng chi nhánh Quận 1" }
                 });
 
             migrationBuilder.InsertData(
@@ -216,9 +234,9 @@ namespace QuanLyKho.Data.Migrations
                 columns: new[] { "Id", "CreateDate", "TransactionTypeName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2022, 11, 22, 9, 36, 31, 537, DateTimeKind.Local).AddTicks(1830), "Nhập kho" },
-                    { 2, new DateTime(2022, 11, 22, 9, 36, 31, 538, DateTimeKind.Local).AddTicks(2940), "Xuất kho" },
-                    { 3, new DateTime(2022, 11, 22, 9, 36, 31, 538, DateTimeKind.Local).AddTicks(2983), "Chuyển hàng" }
+                    { 1, new DateTime(2022, 11, 23, 12, 18, 39, 652, DateTimeKind.Local).AddTicks(1178), "Nhập kho" },
+                    { 2, new DateTime(2022, 11, 23, 12, 18, 39, 653, DateTimeKind.Local).AddTicks(5846), "Xuất kho" },
+                    { 3, new DateTime(2022, 11, 23, 12, 18, 39, 653, DateTimeKind.Local).AddTicks(5888), "Chuyển hàng" }
                 });
 
             migrationBuilder.InsertData(
@@ -226,30 +244,30 @@ namespace QuanLyKho.Data.Migrations
                 columns: new[] { "Id", "CreateDate", "Isocode", "UnitOfMeasureName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2022, 11, 22, 9, 36, 31, 539, DateTimeKind.Local).AddTicks(7915), "pc", "Mẩu" },
-                    { 2, new DateTime(2022, 11, 22, 9, 36, 31, 539, DateTimeKind.Local).AddTicks(8200), "kg", "Kilôgram" },
-                    { 3, new DateTime(2022, 11, 22, 9, 36, 31, 539, DateTimeKind.Local).AddTicks(8207), "m", "Mét" }
+                    { 1, new DateTime(2022, 11, 23, 12, 18, 39, 655, DateTimeKind.Local).AddTicks(7130), "pc", "Mẩu" },
+                    { 2, new DateTime(2022, 11, 23, 12, 18, 39, 655, DateTimeKind.Local).AddTicks(7347), "kg", "Kilôgram" },
+                    { 3, new DateTime(2022, 11, 23, 12, 18, 39, 655, DateTimeKind.Local).AddTicks(7357), "m", "Mét" }
                 });
 
             migrationBuilder.InsertData(
                 table: "User",
                 columns: new[] { "Id", "CreateDate", "Email", "Name", "Password", "Surname", "cmnd" },
-                values: new object[] { 1, new DateTime(2022, 11, 22, 9, 36, 31, 548, DateTimeKind.Local).AddTicks(2230), "admin@admin.com", "Admin", "827ccb0eea8a706c4c34a16891f84e7b", "Admin", null });
+                values: new object[] { 1, new DateTime(2022, 11, 23, 12, 18, 39, 663, DateTimeKind.Local).AddTicks(1853), "admin@admin.com", "Admin", "827ccb0eea8a706c4c34a16891f84e7b", "Admin", null });
 
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "Barcode", "CategoryId", "CreateDate", "Description", "Image", "Price", "ProductName", "UnitOfMeasureId" },
-                values: new object[] { 1, "MAVACH01", null, new DateTime(2022, 11, 22, 9, 36, 31, 549, DateTimeKind.Local).AddTicks(1289), null, null, 1m, "Áo sơ mi", 1 });
+                values: new object[] { 1, "MAVACH01", null, new DateTime(2022, 11, 23, 12, 18, 39, 664, DateTimeKind.Local).AddTicks(305), null, null, 1m, "Áo sơ mi", 1 });
 
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "Barcode", "CategoryId", "CreateDate", "Description", "Image", "Price", "ProductName", "UnitOfMeasureId" },
-                values: new object[] { 2, "MAVACH02", null, new DateTime(2022, 11, 22, 9, 36, 31, 549, DateTimeKind.Local).AddTicks(2412), null, null, 1m, "Áo thun", 1 });
+                values: new object[] { 2, "MAVACH02", null, new DateTime(2022, 11, 23, 12, 18, 39, 664, DateTimeKind.Local).AddTicks(1076), null, null, 1m, "Áo thun", 1 });
 
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "Id", "Barcode", "CategoryId", "CreateDate", "Description", "Image", "Price", "ProductName", "UnitOfMeasureId" },
-                values: new object[] { 3, "MAVACH03", null, new DateTime(2022, 11, 22, 9, 36, 31, 549, DateTimeKind.Local).AddTicks(2438), null, null, 1m, "Áo khoác", 1 });
+                values: new object[] { 3, "MAVACH03", null, new DateTime(2022, 11, 23, 12, 18, 39, 664, DateTimeKind.Local).AddTicks(1100), null, null, 1m, "Áo khoác", 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Product_CategoryId",
@@ -295,6 +313,9 @@ namespace QuanLyKho.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "NhaCungCap");
+
             migrationBuilder.DropTable(
                 name: "StoreStock");
 

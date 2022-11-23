@@ -1,0 +1,53 @@
+﻿@model QuanLyKho.Model.ViewModel.NhaCungCap.CreateNhaCungCapViewModel
+@{
+    ViewData["Title"] = "Create NhaCungCap";
+}
+@section script{
+    <partial name="~/Views/Shared/_FormScriptsPartial.cshtml" />
+}
+<section class="content pt-2">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Thêm nhà cung cấp</h3>
+                    </div>
+                    <form asp-action="Create" asp-antiforgery="true" id="frmCreate">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="TenNhaCungCap">Tên nhà cung cấp</label>
+                                <input asp-for="TenNhaCungCap" type="text" class="form-control">
+                                <span asp-validation-for="TenNhaCungCap" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DiaChi">Địa chỉ</label>
+                                <input asp-for="DiaChi" type="text" class="form-control">
+                                <span asp-validation-for="DiaChi" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="SoDienThoai">Số điện thoại</label>
+                                <input asp-for="SoDienThoai" type="text" class="form-control">
+                                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email">Email</label>
+                                <input asp-for="Email" type="text" class="form-control">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="NguoiDaiDien">Người đại diện</label>
+                                <input asp-for="NguoiDaiDien" type="text" class="form-control">
+                                <span asp-validation-for="NguoiDaiDien" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right">
+                            <a class="btn btn-default" href="/Store">Quay lại</a>
+                            <button id="btnSave" type="submit" class="btn btn-primary">Lưu</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
