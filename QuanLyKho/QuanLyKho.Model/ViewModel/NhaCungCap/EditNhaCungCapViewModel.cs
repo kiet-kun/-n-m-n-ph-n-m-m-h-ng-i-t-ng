@@ -17,7 +17,7 @@ namespace QuanLyKho.Model.ViewModel.NhaCungCap
         public string DiaChi { get; set; }
 
         [Required(ErrorMessage = "Vui lòng nhập")]
-        [MaxLength(10)]
+        [MaxLength(20)]
         public string SoDienThoai { get; set; }
 
         [MaxLength(50)]
