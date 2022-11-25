@@ -8,12 +8,16 @@ $(document).ready(function () {
         "bServerSide": true,
         "processing": true,
         "paging": true,
-        "sAjaxSource": "/Category/List",
+        "sAjaxSource": "/NhaCungCap/List",
         "info": true,
         "fnServerData": function (sSource, aoData, fnCallback, oSettings) {
             aoData.push(
                 { "name": "returnformat", "value": "plain" },
-                { "name": "CategoryName", "value": $('input[name="CategoryName"]').val() }
+                { "name": "TenNhaCungCap", "value": $('input[name="TenNhaCungCap"]').val() },
+                { "name": "DiaChi", "value": $('input[name="DiaChi"]').val() },
+                { "name": "SoDienThoai", "value": $('input[name="SoDienThoai"]').val() },
+                { "name": "Email", "value": $('input[name="Email"]').val() },
+                { "name": "NguoiDaiDien", "value": $('input[name="NguoiDaiDien"]').val() }
             );
             $.ajax({
                 "dataType": 'json',
@@ -33,14 +37,26 @@ $(document).ready(function () {
         aoColumns:
             [
                 {
-                    mDataProp: "CategoryName"
+                    mDataProp: "TenNhaCungCap"
+                },
+                {
+                    mDataProp: "DiaChi"
+                },
+                {
+                    mDataProp: "SoDienThoai"
+                },
+                {
+                    mDataProp: "Email"
+                },
+                {
+                    mDataProp: "NguoiDaiDien"
                 },
                 {
                     "sDefaultContent": "",
                     "bSortable": false,
                     "mRender": function (data, type, row) {
                         var buttons = "";
-                        buttons += '<a href="/Category/Edit/' + row.Id + '" class="btn btn-xs btn-warning"><i class="fas fa-pen"></i> Cập nhật</a>&nbsp;'
+                        buttons += '<a href="/NhaCungCap/Edit/' + row.Id + '" class="btn btn-xs btn-warning"><i class="fas fa-pen"></i> Cập nhật</a>&nbsp;'
                         buttons += '<a onclick="deleteRow(this,' + row.Id + ')"  class="btn btn-xs btn-danger"><i class="fas fa-trash"></i> Xóa</a>'
                         return buttons;
                     }
@@ -72,7 +88,7 @@ $(document).ready(function () {
 function deleteRow(row, id) {
 
     $.ajax({
-        url: '/Category/Delete/' + id,
+        url: '/NhaCungCap/Delete/' + id,
         type: "POST",
         async: false,
         success: function (data) {

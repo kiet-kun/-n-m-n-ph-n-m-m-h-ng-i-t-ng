@@ -28,5 +28,16 @@ namespace QuanLyKho.Model.ViewModel.User
         [MaxLength(30)]
         [Display]
         public string Surname { get; set; }
+
+        [Required(ErrorMessage = "Vui lòng nhập chứng minh nhân dân")]
+        [MaxLength(9)]
+        [Display(Name = "Chứng minh nhân dân")]
+        public string cmnd { get; set; }
+
+        [Display(Name = "Số điện thoại")]
+        public string sdt { get; set; }
+
+        [Display(Name = "Ngày sinh")]
+        public DateTime ngaysinh { get; set; }
     }
 }

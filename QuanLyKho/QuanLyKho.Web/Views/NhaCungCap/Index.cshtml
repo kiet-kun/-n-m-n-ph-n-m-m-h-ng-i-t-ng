@@ -1,6 +1,6 @@
-﻿@model QuanLyKho.Model.ViewModel.Store.SearchStoreViewModel
+﻿@model QuanLyKho.Model.ViewModel.NhaCungCap.SearchNhaCungCapViewModel
 @{
-    ViewData["Title"] = "Store List";
+    ViewData["Title"] = "NhaCungCap List";
 }
 
 <section class="content pt-2">
@@ -15,22 +15,17 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label asp-for="StoreName">Tên</label>
-                                    <input asp-for="StoreName" type="text" class="form-control-sm form-control enter-keyup">
+                                    <label asp-for="TenNhaCungCap">Tên</label>
+                                    <input asp-for="TenNhaCungCap" type="text" class="form-control-sm form-control enter-keyup">
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label asp-for="StoreCode">Mã</label>
-                                    <input asp-for="StoreCode" type="text" class="form-control-sm form-control enter-keyup">
-                                </div>
-                            </div>
+                           
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-right">
                                 <button id="btnClear" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-sync-alt"></i> Đặt lại bộ lọc</button>
                                 <button id="btnFilter" type="button" class="btn btn-primary btn-sm"><i class="fas fa-search"></i> Lọc</button>
-                                <a class="btn btn-info btn-sm" href="/Store/Create"><i class="fas fa-plus"></i> Thêm cửa hàng</a>
+                                <a class="btn btn-info btn-sm" href="/NhaCungCap/Create"><i class="fas fa-plus"></i> Thêm cửa hàng</a>
                             </div>
                         </div>
                     </div>
@@ -42,15 +37,17 @@
             <div class="col-12">
                 <div class="card card-secondary">
                     <div class="card-header">
-                        <h3 class="card-title">Danh sách cửa hàng</h3>
+                        <h3 class="card-title">Danh sách nhà cung cấp</h3>
                     </div>
                     <div class="card-body">
                         <table id="datatable" class="table table-bordered table-hover dt-responsive nowrap w-100">
                             <thead>
                                 <tr>
                                     <th>Tên</th>
-                                    <th>Mã</th>
                                     <th>Địa chỉ</th>
+                                    <th>SĐT</th>
+                                    <th>Email</th>
+                                    <th>Người đại diện</th>
                                     <th style="width:15%">Thao tác</th>
                                 </tr>
                             </thead>
@@ -59,8 +56,10 @@
                             <tfoot>
                                 <tr>
                                     <th>Tên</th>
-                                    <th>Mã</th>
                                     <th>Địa chỉ</th>
+                                    <th>SĐT</th>
+                                    <th>Email</th>
+                                    <th>Người đại diện</th>
                                     <th style="width:15%">Thao tác</th>
                                 </tr>
                             </tfoot>
@@ -76,8 +75,8 @@
 @section style{
     <partial name="~/Views/Shared/_DataTableStylePartial.cshtml" />
 }
-@section script{
+    @section script{
     <partial name="~/Views/Shared/_DataTableScriptPartial.cshtml" />
-    <script src="~/pages/store/store-list.js"></script>
+    <script src="~/pages/NhaCungCap/NhaCungCap-list.js"></script>
 }
 

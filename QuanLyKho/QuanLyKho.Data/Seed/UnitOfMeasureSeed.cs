@@ -11,9 +11,8 @@ namespace QuanLyKho.Data.Seed
     {
         public void Configure(EntityTypeBuilder<UnitOfMeasure> builder)
         {
-            builder.HasData(new UnitOfMeasure { Id = 1, UnitOfMeasureName = "Mẩu", Isocode = "pc", CreateDate = DateTime.Now });
+            builder.HasData(new UnitOfMeasure { Id = 1, UnitOfMeasureName = "Sản phẩm", Isocode = "sp", CreateDate = DateTime.Now });
             builder.HasData(new UnitOfMeasure { Id = 2, UnitOfMeasureName = "Kilôgram", Isocode = "kg", CreateDate = DateTime.Now });
-            builder.HasData(new UnitOfMeasure { Id = 3, UnitOfMeasureName = "Mét", Isocode = "m", CreateDate = DateTime.Now });
         }
     }
 }

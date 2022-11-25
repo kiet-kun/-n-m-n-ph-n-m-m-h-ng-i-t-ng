@@ -17,5 +17,7 @@ namespace QuanLyKho.Model.ViewModel.User
 
         [Display]
         public string Surname { get; set; }
+
+        public string cmnd { get; set; }
     }
 }

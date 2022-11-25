@@ -2,8 +2,27 @@
 @{
     ViewData["Title"] = "Edit User";
 }
-@section script{
+@section style{
+
+    <link href="~/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet">
+    <link href="~/plugins/select2/css/select2.min.css" rel="stylesheet" />
+    <link href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css" rel="stylesheet" />
+}
+    @section script{
+    <script src="~/plugins/select2/js/select2.full.min.js"></script>
+    <script src="~/plugins/moment/moment.min.js"></script>
+    <script src="~/plugins/daterangepicker/daterangepicker.js"></script>
     <partial name="~/Views/Shared/_FormScriptsPartial.cshtml" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.select2').select2();
+            $('.datepicker').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true
+            });
+        });
+    </script>
 }
 <section class="content pt-2">
     <div class="container-fluid ">
@@ -35,6 +54,21 @@
                                 <input asp-for="Surname" type="text" class="form-control">
                                 <span asp-validation-for="Surname" class="text-danger"></span>
                             </div>
+                                <div class="form-group">
+                                    <label asp-for="cmnd"></label>
+                                    <input asp-for="cmnd" type="text" class="form-control">
+                                    <span asp-validation-for="cmnd" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="sdt"></label>
+                                    <input asp-for="sdt" type="text" class="form-control">
+                                    <span asp-validation-for="sdt" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="ngaysinh"></label>
+                                    <input asp-for="ngaysinh" type="text" class="form-control datepicker">
+                                    <span asp-validation-for="ngaysinh" class="text-danger"></span>
+                                </div>
                         </div>
                         <div class="card-footer text-right">
                             <a class="btn btn-default" href="/User">Quay lại</a>

@@ -61,7 +61,7 @@ namespace QuanLyKho.Common.Message {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Successful.
+        ///   Looks up a localized string similar to Thành công.
         /// </summary>
         public static string MSG0001 {
             get {
@@ -70,7 +70,7 @@ namespace QuanLyKho.Common.Message {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error: Detail {0}.
+        ///   Looks up a localized string similar to Lổi : Chi tiết {0}.
         /// </summary>
         public static string MSG0002 {
             get {
@@ -79,7 +79,7 @@ namespace QuanLyKho.Common.Message {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email is already in use..
+        ///   Looks up a localized string similar to Email đã được sử dụng.
         /// </summary>
         public static string MSG0003 {
             get {
@@ -97,7 +97,7 @@ namespace QuanLyKho.Common.Message {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid email or password..
+        ///   Looks up a localized string similar to Email hoặc mật khẩu không hợp lệ.
         /// </summary>
         public static string MSG0005 {
             get {
