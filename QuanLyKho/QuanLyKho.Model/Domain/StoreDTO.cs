@@ -8,5 +8,7 @@ namespace QuanLyKho.Model.Domain
     {
         public string StoreName { get; set; }
         public string StoreCode { get; set; }
+
+        public string diachi { get; set; }
     }
 }

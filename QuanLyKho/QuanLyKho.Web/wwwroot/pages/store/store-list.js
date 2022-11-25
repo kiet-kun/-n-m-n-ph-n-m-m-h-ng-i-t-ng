@@ -14,7 +14,8 @@ $(document).ready(function () {
             aoData.push(
                 { "name": "returnformat", "value": "plain" },
                 { "name": "StoreName", "value": $('input[name="StoreName"]').val() },
-                { "name": "StoreCode", "value": $('input[name="StoreCode"]').val() }
+                { "name": "StoreCode", "value": $('input[name="StoreCode"]').val() },
+                { "name": "diachi", "value": $('input[name="diachi"]').val() },
             );
             $.ajax({
                 "dataType": 'json',
@@ -38,6 +39,9 @@ $(document).ready(function () {
                 },
                 {
                     mDataProp: "StoreCode"
+                },
+                {
+                    mDataProp: "diachi"
                 },
                 {
                     "sDefaultContent": "",
