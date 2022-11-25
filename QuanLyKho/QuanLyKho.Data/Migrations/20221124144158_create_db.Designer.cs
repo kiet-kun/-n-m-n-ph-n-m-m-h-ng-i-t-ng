@@ -10,8 +10,8 @@ using QuanLyKho.Data.Context;
 namespace QuanLyKho.Data.Migrations
 {
     [DbContext(typeof(WarehouseDbContext))]
-    [Migration("20221124141018_create-db")]
-    partial class createdb
+    [Migration("20221124144158_create_db")]
+    partial class create_db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -47,79 +47,79 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 1,
                             CategoryName = "THỊT, CÁ, TRỨNG, HẢI SẢN",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(796)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4540)
                         },
                         new
                         {
                             Id = 2,
                             CategoryName = "RAU, CỦ, TRÁI CÂY",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(866)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4595)
                         },
                         new
                         {
                             Id = 3,
                             CategoryName = "THỰC PHẨM ĐÔNG - MÁT",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(869)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4597)
                         },
                         new
                         {
                             Id = 4,
                             CategoryName = "MÌ, MIẾN, CHÁO, PHỞ",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(871)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4599)
                         },
                         new
                         {
                             Id = 5,
                             CategoryName = "GẠO, BỘT, ĐỒ KHÔ",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(872)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4600)
                         },
                         new
                         {
                             Id = 6,
                             CategoryName = "DẦU ĂN, NƯỚC CHẤM, GIA VỊ",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(874)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4601)
                         },
                         new
                         {
                             Id = 7,
                             CategoryName = "BIA, NƯỚC GIẢI KHÁT",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(876)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4603)
                         },
                         new
                         {
                             Id = 8,
                             CategoryName = "SỮA CÁC LOẠI",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(877)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4605)
                         },
                         new
                         {
                             Id = 9,
                             CategoryName = "BÁNH KẸO CÁC LOẠI",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(879)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4606)
                         },
                         new
                         {
                             Id = 10,
                             CategoryName = "CHĂM SÓC CÁ NHÂN",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(881)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4608)
                         },
                         new
                         {
                             Id = 11,
                             CategoryName = "SẢN PHẨM CHO MẸ VÀ BÉ",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(882)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4609)
                         },
                         new
                         {
                             Id = 12,
                             CategoryName = "VỆ SINH NHÀ CỬA",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(884)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4611)
                         },
                         new
                         {
                             Id = 13,
                             CategoryName = "ĐỒ DÙNG GIA ĐÌNH",
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 789, DateTimeKind.Local).AddTicks(886)
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 754, DateTimeKind.Local).AddTicks(4612)
                         });
                 });
 
@@ -156,7 +156,7 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(7033),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 764, DateTimeKind.Local).AddTicks(1688),
                             DiaChi = "Lô A4- Đường NB, Cụm Nhị Xuân, X. Xuân Thới Sơn, H. Hóc Môn Tp. Hồ Chí Minh (TPHCM)",
                             Email = "cd@congdanh.vn",
                             NguoiDaiDien = "Ngô Bình An",
@@ -166,7 +166,7 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(7128),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 764, DateTimeKind.Local).AddTicks(1775),
                             DiaChi = "368/4 Tỉnh Lộ 15, Ấp Bến Cỏ, X. Phú Hòa Đông, H. Củ Chi, Tp. Hồ Chí Minh (TPHCM)",
                             Email = "duyanhfoodscuchi@gmail.com",
                             NguoiDaiDien = "Trần Phú Ân",
@@ -176,7 +176,7 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(7132),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 764, DateTimeKind.Local).AddTicks(1778),
                             DiaChi = "Khu Công Nghiệp Cát Lái, 934D1 Đường D, P. Thạnh Mỹ Lợi, Q. 2, Tp. Hồ Chí Minh (TPHCM), Việt Nam",
                             Email = "phongkinhdoanh@gasaco.com.vn",
                             NguoiDaiDien = "Nguyễn Ðức Bảo",
@@ -186,7 +186,7 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(7134),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 764, DateTimeKind.Local).AddTicks(1821),
                             DiaChi = "E4/20 Nguyễn Hữu Trí, Thị Trấn Tân Túc, Huyện Bình Chánh, Tp. Hồ Chí Minh (TPHCM), Việt Nam",
                             Email = "tmdt@nosafood.com",
                             NguoiDaiDien = "Nguyễn Vinh Diệu",
@@ -196,7 +196,7 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(7136),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 764, DateTimeKind.Local).AddTicks(1823),
                             DiaChi = "216R Quang Trung, P. 10, Q. Gò Vấp, Tp. Hồ Chí Minh (TPHCM), Việt Nam",
                             Email = "info@oriflame.com.vn",
                             NguoiDaiDien = "Lê Gia Ðức ",
@@ -255,7 +255,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(8771),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(4723),
                             ProductName = "Thịt ba rọi bò Thảo Tiến Foods khay 300g",
                             UnitOfMeasureId = 1
                         },
@@ -263,7 +263,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9771),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(5955),
                             ProductName = "Ba rọi heo C.P khay 500g",
                             UnitOfMeasureId = 1
                         },
@@ -271,7 +271,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 3,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9805),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(5998),
                             ProductName = "Ức gà tươi phi lê C.P khay 500g (1-3 miếng)",
                             UnitOfMeasureId = 1
                         },
@@ -279,7 +279,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 4,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9807),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6000),
                             ProductName = "Tôm thẻ nguyên con khay 250g (10 - 13 con)",
                             UnitOfMeasureId = 1
                         },
@@ -287,7 +287,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 5,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9808),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6001),
                             ProductName = "Cá hồi đông lạnh cắt khúc khay 300g",
                             UnitOfMeasureId = 1
                         },
@@ -295,7 +295,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 6,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9812),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6006),
                             ProductName = "Hộp 10 trứng gà tươi 4KFarm",
                             UnitOfMeasureId = 1
                         },
@@ -303,7 +303,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 7,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9830),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6024),
                             ProductName = "Cải bẹ xanh baby gói 300g",
                             UnitOfMeasureId = 1
                         },
@@ -311,7 +311,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 8,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9833),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6026),
                             ProductName = "Xà lách lolo xanh thủy canh gói 300g",
                             UnitOfMeasureId = 1
                         },
@@ -319,7 +319,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 9,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9834),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6028),
                             ProductName = "Giá đậu xanh gói 200g",
                             UnitOfMeasureId = 1
                         },
@@ -327,7 +327,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 10,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9837),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6030),
                             ProductName = "Ớt hiểm trái túi 50g",
                             UnitOfMeasureId = 1
                         },
@@ -335,7 +335,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 11,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9838),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6032),
                             ProductName = "Tắc trái túi 200g (20 - 21 trái)",
                             UnitOfMeasureId = 1
                         },
@@ -343,7 +343,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 12,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9839),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6034),
                             ProductName = "Cà rốt baby vỉ 500g",
                             UnitOfMeasureId = 1
                         },
@@ -351,7 +351,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 13,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9841),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6035),
                             ProductName = "Khổ qua khay 500g (3-5 trái)",
                             UnitOfMeasureId = 1
                         },
@@ -359,7 +359,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 14,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9842),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6036),
                             ProductName = "Khoai lang Nhật túi 1kg (4 - 10 củ)",
                             UnitOfMeasureId = 1
                         },
@@ -367,7 +367,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 15,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9844),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6038),
                             ProductName = "Bí đỏ tròn túi 500g",
                             UnitOfMeasureId = 1
                         },
@@ -375,7 +375,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 16,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9845),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6039),
                             ProductName = "Táo Queen nhập khẩu New Zealand hộp 1kg (5-7 trái)",
                             UnitOfMeasureId = 1
                         },
@@ -383,7 +383,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 17,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9846),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6040),
                             ProductName = "Táo Ninh Thuận túi 1kg (25 - 30 trái)",
                             UnitOfMeasureId = 1
                         },
@@ -391,7 +391,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 18,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9848),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6043),
                             ProductName = "Bưởi năm roi trái từ 1.3kg - 1.4kg",
                             UnitOfMeasureId = 1
                         },
@@ -399,7 +399,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 19,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9853),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6049),
                             ProductName = "Kem que Topten Socola Wall's 55g",
                             UnitOfMeasureId = 1
                         },
@@ -407,7 +407,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 20,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9854),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6051),
                             ProductName = "2 hộp kem vani sốt socola Wall's 450g",
                             UnitOfMeasureId = 1
                         },
@@ -415,7 +415,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 21,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9856),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6098),
                             ProductName = "Bánh mì tươi đông lạnh O'smiles 350g",
                             UnitOfMeasureId = 1
                         },
@@ -423,7 +423,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 22,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9857),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6100),
                             ProductName = "Bánh mì que không nhân Vbread túi 10 cái x 30g",
                             UnitOfMeasureId = 1
                         },
@@ -431,7 +431,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 23,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9900),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6102),
                             ProductName = "TChả lụa bì ớt xiêm xanh G Kitchen cây 500g",
                             UnitOfMeasureId = 1
                         },
@@ -439,7 +439,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 24,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9902),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6104),
                             ProductName = "Xúc xích phô mai Kichi Kichi Icook khay 340g",
                             UnitOfMeasureId = 1
                         },
@@ -447,7 +447,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 25,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9904),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6105),
                             ProductName = "Chả giò hải sản trái cây La Cusina gói 300g",
                             UnitOfMeasureId = 1
                         },
@@ -455,7 +455,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 26,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9905),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6107),
                             ProductName = "Mực viên Bếp 5 sao gói 200g",
                             UnitOfMeasureId = 1
                         },
@@ -463,7 +463,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 27,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9906),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6108),
                             ProductName = "Phô mai Vinamilk hộp 120g (8 miếng)",
                             UnitOfMeasureId = 1
                         },
@@ -471,7 +471,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 28,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9908),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6110),
                             ProductName = "Sữa uống lên men hương tự nhiên Betagen chai 400ml",
                             UnitOfMeasureId = 1
                         },
@@ -479,7 +479,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 29,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9909),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6111),
                             ProductName = "Kim chi cải thảo cắt lát Bibigo Ông Kim's gói 100g",
                             UnitOfMeasureId = 1
                         },
@@ -487,7 +487,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 30,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9910),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6113),
                             ProductName = "Ớt ngâm chua ngọt Sông Hương hũ 350g",
                             UnitOfMeasureId = 1
                         },
@@ -495,7 +495,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 31,
                             CategoryId = 4,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9914),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6117),
                             ProductName = "Thùng 30 gói mì Hảo Hảo tôm chua cay 75g",
                             UnitOfMeasureId = 1
                         },
@@ -503,7 +503,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 32,
                             CategoryId = 4,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9916),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6119),
                             ProductName = "Thùng 30 gói mì 3 Miền tôm chua cay 65g",
                             UnitOfMeasureId = 1
                         },
@@ -511,7 +511,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 33,
                             CategoryId = 4,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9917),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6121),
                             ProductName = "Thùng 30 gói mì Kokomi 90 tôm chua cay 90g",
                             UnitOfMeasureId = 1
                         },
@@ -519,7 +519,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 34,
                             CategoryId = 5,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9921),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6126),
                             ProductName = "Gạo thơm A An ST21 túi 5kg",
                             UnitOfMeasureId = 1
                         },
@@ -527,7 +527,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 35,
                             CategoryId = 5,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9923),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6128),
                             ProductName = "Gạo trắng Thiên Nhật túi 5kg",
                             UnitOfMeasureId = 1
                         },
@@ -535,7 +535,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 36,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9927),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6132),
                             ProductName = "Dầu thực vật Nakydaco Cooking Oil chai 1 lít",
                             UnitOfMeasureId = 1
                         },
@@ -543,7 +543,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 37,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9928),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6134),
                             ProductName = "Đường mía thượng hạng Biên Hòa gói 1kg",
                             UnitOfMeasureId = 1
                         },
@@ -551,7 +551,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 38,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9929),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6136),
                             ProductName = "Bột ngọt hạt lớn Ajinomoto gói 454g",
                             UnitOfMeasureId = 1
                         },
@@ -559,7 +559,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 39,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9931),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6137),
                             ProductName = "Muối biển Bạc Liêu cao cấp gói 500g",
                             UnitOfMeasureId = 1
                         },
@@ -567,7 +567,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 40,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9932),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6139),
                             ProductName = "Nước mắm Nam Ngư 10 độ đạm chai 900ml",
                             UnitOfMeasureId = 1
                         },
@@ -575,7 +575,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 41,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9933),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6140),
                             ProductName = "Nước tương đậu nành đậm đặc Maggi chai 700ml",
                             UnitOfMeasureId = 1
                         },
@@ -583,7 +583,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 42,
                             CategoryId = 6,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9934),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6141),
                             ProductName = "Dầu hào đậm đặc Maggi chai 530g",
                             UnitOfMeasureId = 1
                         },
@@ -591,7 +591,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 43,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9941),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6146),
                             ProductName = "Thùng 24 lon bia Sài Gòn Lager 330ml",
                             UnitOfMeasureId = 1
                         },
@@ -599,7 +599,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 44,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9942),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6148),
                             ProductName = "Thùng 24 lon bia Heineken Sleek 330ml",
                             UnitOfMeasureId = 1
                         },
@@ -607,7 +607,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 45,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9944),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6149),
                             ProductName = "Rượu soju Good Day vị đào 13.5% chai 360ml",
                             UnitOfMeasureId = 1
                         },
@@ -615,7 +615,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 46,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9945),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6151),
                             ProductName = "6 lon nước ngọt Coca Cola 235ml",
                             UnitOfMeasureId = 1
                         },
@@ -623,7 +623,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 47,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9946),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6152),
                             ProductName = "6 chai nước ngọt Sprite hương chanh 390ml",
                             UnitOfMeasureId = 1
                         },
@@ -631,7 +631,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 48,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9948),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6154),
                             ProductName = "6 lon nước tăng lực Redbull 250ml",
                             UnitOfMeasureId = 1
                         },
@@ -639,7 +639,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 49,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9949),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6155),
                             ProductName = "6 chai Sting hương dâu 330ml",
                             UnitOfMeasureId = 1
                         },
@@ -647,7 +647,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 50,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9950),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6156),
                             ProductName = "Đá me hạt mềm Thanh Bình 900g",
                             UnitOfMeasureId = 1
                         },
@@ -655,7 +655,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 51,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9951),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6158),
                             ProductName = "Cà phê sữa đá NesCafé nhân đôi sánh quyện 600g",
                             UnitOfMeasureId = 1
                         },
@@ -663,7 +663,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 52,
                             CategoryId = 7,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9952),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6159),
                             ProductName = "Cà phê sữa VinaCafé Gold Original 480g",
                             UnitOfMeasureId = 1
                         },
@@ -671,7 +671,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 53,
                             CategoryId = 8,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9956),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6163),
                             ProductName = "Thùng 48 hộp sữa tươi có đường Vinamilk 180ml",
                             UnitOfMeasureId = 1
                         },
@@ -679,7 +679,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 54,
                             CategoryId = 8,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9957),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6164),
                             ProductName = "Thùng 48 hộp sữa tươi tiệt trùng vị tự nhiên TH true MILK Hilo 180ml",
                             UnitOfMeasureId = 1
                         },
@@ -687,7 +687,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 55,
                             CategoryId = 9,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9961),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6168),
                             ProductName = "Kẹo mút hữu cơ 4 hương vị trái cây Yumearth gói 241g",
                             UnitOfMeasureId = 1
                         },
@@ -695,7 +695,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 56,
                             CategoryId = 9,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9962),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6170),
                             ProductName = "Bánh quy kem vị cacao Lotte Sand hộp 315g",
                             UnitOfMeasureId = 1
                         },
@@ -703,7 +703,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 57,
                             CategoryId = 9,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9964),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6171),
                             ProductName = "Socola sữa hạnh nhân Bernique hộp 450g",
                             UnitOfMeasureId = 1
                         },
@@ -711,7 +711,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 58,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9967),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6176),
                             ProductName = "Khăn ướt Yuniku hương trà xanh gói 20 miếng - giao màu ngẫu nhiên",
                             UnitOfMeasureId = 1
                         },
@@ -719,7 +719,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 59,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9969),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6178),
                             ProductName = "Dầu gội tinh dầu Iron Stone For Men Woody Space 620ml",
                             UnitOfMeasureId = 1
                         },
@@ -727,7 +727,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 60,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9970),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6179),
                             ProductName = "Dầu gội sạch gàu Clear Men Deep Cleanse sạch sâu 175ml",
                             UnitOfMeasureId = 1
                         },
@@ -735,7 +735,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 61,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9971),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6180),
                             ProductName = "Sữa tắm bảo vệ khỏi vi khuẩn Lifebuoy 980ml",
                             UnitOfMeasureId = 1
                         },
@@ -743,7 +743,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 62,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9973),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6182),
                             ProductName = "Kem đánh răng Colgate MaxFresh hương trà xanh 230g",
                             UnitOfMeasureId = 1
                         },
@@ -751,7 +751,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 63,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9974),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6183),
                             ProductName = "Bộ 3 bàn chải đánh răng Puri Slim Tips Charcoal siêu mềm",
                             UnitOfMeasureId = 1
                         },
@@ -759,7 +759,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 64,
                             CategoryId = 10,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9975),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6184),
                             ProductName = "Khẩu trang y tế Promask N95 FFP2 5 lớp hộp 20 cái",
                             UnitOfMeasureId = 1
                         },
@@ -767,7 +767,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 65,
                             CategoryId = 11,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 806, DateTimeKind.Local).AddTicks(9978),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6188),
                             ProductName = "Sữa bột Frisolac Gold số 4 lon 380g",
                             UnitOfMeasureId = 1
                         },
@@ -775,7 +775,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 66,
                             CategoryId = 11,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(44),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6218),
                             ProductName = "Tã quần Huggies Dry size XL 62 miếng (cho bé 12 - 17kg)",
                             UnitOfMeasureId = 1
                         },
@@ -783,7 +783,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 67,
                             CategoryId = 12,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(49),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6222),
                             ProductName = "Bột giặt IZI HOME trắng sáng 3kg",
                             UnitOfMeasureId = 1
                         },
@@ -791,7 +791,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 68,
                             CategoryId = 12,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(51),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6224),
                             ProductName = "Nước rửa chén Lix Vitamin E siêu sạch hương trà xanh can 3.53 lít",
                             UnitOfMeasureId = 1
                         },
@@ -799,7 +799,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 69,
                             CategoryId = 12,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(52),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6226),
                             ProductName = "Nước gel tẩy bồn cầu VIM xanh biển diệt khuẩn hương dịu nhẹ chai 880ml",
                             UnitOfMeasureId = 1
                         },
@@ -807,7 +807,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 70,
                             CategoryId = 12,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(53),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6227),
                             ProductName = "Nước lau sàn Sunlight tinh dầu thảo mộc hương chanh yuzu và sả ngăn côn trùng túi 3.38 lít",
                             UnitOfMeasureId = 1
                         },
@@ -815,7 +815,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 71,
                             CategoryId = 13,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(57),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6232),
                             ProductName = "Lốc 3 cuộn túi rác đen tự huỷ sinh học Bách Hóa XANH 64x78cm (1kg)",
                             UnitOfMeasureId = 1
                         },
@@ -823,7 +823,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 72,
                             CategoryId = 13,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(59),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6233),
                             ProductName = "Bộ bình ly thuỷ tinh Luminarc Rotterdam Blue 5pcs 350ml",
                             UnitOfMeasureId = 1
                         },
@@ -831,7 +831,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 73,
                             CategoryId = 13,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(60),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6235),
                             ProductName = "Bộ 3 nồi nhôm quai tròn xi bóng t3 nhỏ Kim Hằng Bạch Đằng",
                             UnitOfMeasureId = 1
                         },
@@ -839,7 +839,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 74,
                             CategoryId = 13,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(62),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6237),
                             ProductName = "Bộ 10 đôi đũa gỗ cẩm lai tiện tròn Thanh Tú 25cm",
                             UnitOfMeasureId = 1
                         },
@@ -847,7 +847,7 @@ namespace QuanLyKho.Data.Migrations
                         {
                             Id = 75,
                             CategoryId = 13,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 807, DateTimeKind.Local).AddTicks(63),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 763, DateTimeKind.Local).AddTicks(6238),
                             ProductName = "Khay đá nhỏ nhựa 10 viên Hofaco HPL04 (giao màu ngẫu nhiên)",
                             UnitOfMeasureId = 1
                         });
@@ -883,14 +883,14 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 804, DateTimeKind.Local).AddTicks(9931),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 761, DateTimeKind.Local).AddTicks(4365),
                             StoreCode = "CUAHANG01",
                             StoreName = "Cửa hàng chi nhánh Gò Vấp"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 804, DateTimeKind.Local).AddTicks(9994),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 761, DateTimeKind.Local).AddTicks(4450),
                             StoreCode = "CUAHANG02",
                             StoreName = "Cửa hàng chi nhánh Quận 1"
                         });
@@ -997,19 +997,19 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 785, DateTimeKind.Local).AddTicks(1041),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 751, DateTimeKind.Local).AddTicks(1655),
                             TransactionTypeName = "Nhập kho"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 786, DateTimeKind.Local).AddTicks(5267),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 752, DateTimeKind.Local).AddTicks(3318),
                             TransactionTypeName = "Xuất kho"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 786, DateTimeKind.Local).AddTicks(5326),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 752, DateTimeKind.Local).AddTicks(3364),
                             TransactionTypeName = "Chuyển hàng"
                         });
                 });
@@ -1044,14 +1044,14 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 788, DateTimeKind.Local).AddTicks(3548),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 753, DateTimeKind.Local).AddTicks(8462),
                             Isocode = "sp",
                             UnitOfMeasureName = "Sản phẩm"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 788, DateTimeKind.Local).AddTicks(3847),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 753, DateTimeKind.Local).AddTicks(8724),
                             Isocode = "kg",
                             UnitOfMeasureName = "Kilôgram"
                         });
@@ -1092,6 +1092,12 @@ namespace QuanLyKho.Data.Migrations
                     b.Property<string>("cmnd")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("ngaysinh")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("sdt")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
@@ -1103,11 +1109,58 @@ namespace QuanLyKho.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2022, 11, 24, 21, 10, 17, 804, DateTimeKind.Local).AddTicks(6386),
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 760, DateTimeKind.Local).AddTicks(8108),
                             Email = "admin@admin.com",
                             Name = "Admin",
                             Password = "827ccb0eea8a706c4c34a16891f84e7b",
                             Surname = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 760, DateTimeKind.Local).AddTicks(8742),
+                            Email = "TranHuuThong@gmail.com",
+                            Name = "Thống",
+                            Password = "827ccb0eea8a706c4c34a16891f84e7b",
+                            Surname = "Trần Hữu",
+                            cmnd = "6373891990",
+                            sdt = "099 198 37 36"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 760, DateTimeKind.Local).AddTicks(9729),
+                            Email = "LeQuocThang@gmail.com",
+                            Name = "Thắng",
+                            Password = "827ccb0eea8a706c4c34a16891f84e7b",
+                            Surname = "Lê Quốc",
+                            cmnd = "6373891990",
+                            ngaysinh = new DateTime(2022, 11, 24, 21, 41, 57, 760, DateTimeKind.Local).AddTicks(9765),
+                            sdt = "099 198 37 36"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 761, DateTimeKind.Local).AddTicks(338),
+                            Email = "NguyenNhatTien@gmail.com",
+                            Name = "Tiến",
+                            Password = "827ccb0eea8a706c4c34a16891f84e7b",
+                            Surname = "Nguyễn Nhất",
+                            cmnd = "6373891990",
+                            ngaysinh = new DateTime(2022, 11, 24, 21, 41, 57, 761, DateTimeKind.Local).AddTicks(344),
+                            sdt = "099 198 37 36"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreateDate = new DateTime(2022, 11, 24, 21, 41, 57, 761, DateTimeKind.Local).AddTicks(385),
+                            Email = "ChuMinhNghia@gmail.com",
+                            Name = "Chu",
+                            Password = "827ccb0eea8a706c4c34a16891f84e7b",
+                            Surname = "Minh Nghĩa",
+                            cmnd = "6373891990",
+                            ngaysinh = new DateTime(2022, 11, 24, 21, 41, 57, 761, DateTimeKind.Local).AddTicks(386),
+                            sdt = "099 198 37 36"
                         });
                 });
 

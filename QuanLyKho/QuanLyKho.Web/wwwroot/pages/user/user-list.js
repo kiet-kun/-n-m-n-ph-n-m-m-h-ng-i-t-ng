@@ -16,7 +16,9 @@ $(document).ready(function () {
                 { "name": "Email", "value": $('input[name="Email"]').val() },
                 { "name": "Name", "value": $('input[name="Name"]').val() },
                 { "name": "Surname", "value": $('input[name="Surname"]').val() },  
-                { "name": "cmnd", "value": $('input[name="cmnd"]').val() }    
+                { "name": "cmnd", "value": $('input[name="cmnd"]').val() },
+                { "name": "sdt", "value": $('input[name="sdt"]').val() } ,   
+                { "name": "ngaysinh", "value": $('input[name="ngaysinh"]').val() }    
             );
             $.ajax({
                 "dataType": 'json',
@@ -46,13 +48,19 @@ $(document).ready(function () {
                 },  
                 {
                     mDataProp: "cmnd"
+                },
+                {
+                    mDataProp: "sdt"
+                },  
+                {
+                    mDataProp: "ngaysinh"
                 },  
                 {
                     "sDefaultContent": "",
                     "bSortable": false,
                     "mRender": function (data, type, row) {
                         var buttons = "";
-                        buttons += '<a class="btn btn-xs btn-warning"><i class="fas fa-pen"></i> Test</a>&nbsp;'
+                  
                         buttons += '<a href="/User/Edit/' + row.Id + '" class="btn btn-xs btn-warning"><i class="fas fa-pen"></i> Cập nhật</a>&nbsp;'
                         buttons += '<a onclick="deleteRow(this,' + row.Id + ')"  class="btn btn-xs btn-danger"><i class="fas fa-trash"></i> Xóa</a>'
                         return buttons;

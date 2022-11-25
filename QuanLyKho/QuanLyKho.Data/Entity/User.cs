@@ -12,5 +12,8 @@ namespace QuanLyKho.Data.Entity
         public string Surname { get; set; }
 
         public string cmnd { get; set; }
+
+        public string sdt { get; set; }
+        public DateTime? ngaysinh { get; set; }
     }
 }
