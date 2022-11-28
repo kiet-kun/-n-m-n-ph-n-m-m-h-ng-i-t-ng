@@ -16,6 +16,7 @@ using QuanLyKho.Repository.TransactionType;
 using QuanLyKho.Repository.UnitOfMeasure;
 using QuanLyKho.Repository.User;
 using QuanLyKho.Repository.NhaCungCap;
+using QuanLyKho.Repository.KhoTong;
 
 namespace QuanLyKho.UnitOfWork
 {
@@ -39,6 +40,17 @@ namespace QuanLyKho.UnitOfWork
         private IUnitOfMeasureRepository iUnitOfMeasureRepository;
         private IUserRepository iUserRepository;
         private INhaCungCapRepository iNhaCungCapRepository;
+        private IKhoTongRepository iKhoTongRepository;
+
+        public IKhoTongRepository KhoTongRepository
+        {
+            get
+            {
+                if (iKhoTongRepository == null)
+                    iKhoTongRepository = new KhoTongRepository(_context);
+                return iKhoTongRepository;
+            }
+        }
 
         public INhaCungCapRepository NhaCungCapRepository
         {

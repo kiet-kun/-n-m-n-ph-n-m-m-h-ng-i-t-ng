@@ -23,6 +23,7 @@ using QuanLyKho.Service.Transaction;
 using QuanLyKho.Service.UnitOfMeasure;
 using QuanLyKho.Service.User;
 using QuanLyKho.Service.NhaCungCap;
+using QuanLyKho.Service.KhoTong;
 
 namespace QuanLyKho.Web
 {
@@ -47,6 +48,7 @@ namespace QuanLyKho.Web
             });
             services.AddAutoMapper(c => c.AddProfile<QuanLyKho.Mapper.MapProfile>(), typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IKhoTongService, KhoTongService>();
             services.AddScoped<INhaCungCapService, NhaCungCapService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IUnitOfMeasureService, UnitOfMeasureService>();

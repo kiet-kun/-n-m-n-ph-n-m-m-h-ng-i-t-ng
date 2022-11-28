@@ -19,6 +19,8 @@ namespace QuanLyKho.Core.UnitOfWorks
         IUserRepository UserRepository { get; }
 
         INhaCungCapRepository NhaCungCapRepository { get; }
+
+        IKhoTongRepository KhoTongRepository { get; }
         Task SaveAsync();
         void Save();
         void Commit();

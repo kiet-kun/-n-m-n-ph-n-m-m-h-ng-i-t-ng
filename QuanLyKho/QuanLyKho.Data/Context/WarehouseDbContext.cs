@@ -14,6 +14,7 @@ namespace QuanLyKho.Data.Context
         {
         }
 
+        public DbSet<KhoTong> KhoTong { get; set; }
         public DbSet<NhaCungCap> NhaCungCap { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Product> Product { get; set; }
