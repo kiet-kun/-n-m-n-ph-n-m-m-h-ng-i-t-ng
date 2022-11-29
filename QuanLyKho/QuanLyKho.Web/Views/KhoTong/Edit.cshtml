@@ -1,0 +1,43 @@
+﻿@model QuanLyKho.Model.ViewModel.KhoTong.EditKhoTongViewModel
+@{
+    ViewData["Title"] = "Edit KhoTong";
+}
+@section script{
+    <partial name="~/Views/Shared/_FormScriptsPartial.cshtml" />
+}
+    <section class="content pt-2">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Thông tin kho tổng</h3>
+                        </div>
+                        <form asp-action="Edit" asp-antiforgery="true" id="frmCreate">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label asp-for="ten"></label>
+                                    <input asp-for="ten" type="text" class="form-control">
+                                    <span asp-validation-for="ten" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="khotongcode"></label>
+                                    <input asp-for="khotongcode" type="text" class="form-control">
+                                    <span asp-validation-for="khotongcode" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="diachi"></label>
+                                    <input asp-for="diachi" type="text" class="form-control">
+                                    <span asp-validation-for="diachi" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="card-footer text-right">
+                                <a class="btn btn-default" href="/KhoTong">Quay lại</a>
+                                <button id="btnSave" type="submit" class="btn btn-primary">Cập nhật</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
