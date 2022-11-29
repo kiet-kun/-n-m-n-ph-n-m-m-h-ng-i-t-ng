@@ -10,5 +10,7 @@ namespace QuanLyKho.Data.Entity
 
         public string khotongcode { get; set; }
         public string diachi { get; set; }
+
+        public virtual ICollection<KhuVucKhoTong> KhuVucKhoTong { get; set; }
     }
 }

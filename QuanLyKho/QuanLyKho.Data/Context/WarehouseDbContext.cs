@@ -13,7 +13,7 @@ namespace QuanLyKho.Data.Context
         public WarehouseDbContext(DbContextOptions<WarehouseDbContext> options) : base(options)
         {
         }
-
+        public DbSet<KhuVucKhoTong> KhuVucKhoTong { get; set; }
         public DbSet<KhoTong> KhoTong { get; set; }
         public DbSet<NhaCungCap> NhaCungCap { get; set; }
         public DbSet<Category> Category { get; set; }

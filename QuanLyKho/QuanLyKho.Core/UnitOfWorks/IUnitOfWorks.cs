@@ -21,6 +21,9 @@ namespace QuanLyKho.Core.UnitOfWorks
         INhaCungCapRepository NhaCungCapRepository { get; }
 
         IKhoTongRepository KhoTongRepository { get; }
+
+        IKhuVucKhoTongRepository KhuVucKhoTongRepository { get; }
+
         Task SaveAsync();
         void Save();
         void Commit();

@@ -17,6 +17,7 @@ using QuanLyKho.Model.ViewModel.UnitOfMeasure;
 using QuanLyKho.Model.ViewModel.User;
 using QuanLyKho.Model.ViewModel.NhaCungCap;
 using QuanLyKho.Model.ViewModel.KhoTong;
+using QuanLyKho.Model.ViewModel.KhuVucKhoTong;
 
 namespace QuanLyKho.Mapper
 {
@@ -26,6 +27,18 @@ namespace QuanLyKho.Mapper
         {
             #region DTO & ViewModel
             CreateMap<ServiceResult, JsonResultModel>();
+
+            //KhuVucKhoTong
+            CreateMap<CreateKhuVucKhoTongViewModel, KhuVucKhoTongDTO>();
+            CreateMap<SearchKhuVucKhoTongViewModel, KhuVucKhoTongDTO>()
+                   .ForMember(dm => dm.PageNumber, vm => vm.MapFrom(vmf => vmf.iDisplayStart))
+                   .ForMember(dm => dm.RecordCount, vm => vm.MapFrom(vmf => vmf.iDisplayLength));
+            CreateMap<KhuVucKhoTongDTO, ListKhuVucKhoTongViewModel>();
+            CreateMap<KhuVucKhoTongDTO, EditKhuVucKhoTongViewModel>();
+            CreateMap<EditKhuVucKhoTongViewModel, KhuVucKhoTongDTO>();
+            CreateMap<KhuVucKhoTongDTO, SelectListItem>()
+                   .ForMember(dm => dm.Value, vm => vm.MapFrom(vmf => vmf.Id.ToString()))
+                   .ForMember(dm => dm.Text, vm => vm.MapFrom(vmf => vmf.ten));
 
             //KhoTong
             CreateMap<CreateKhoTongViewModel, KhoTongDTO>();
@@ -145,6 +158,11 @@ namespace QuanLyKho.Mapper
             #endregion
 
             #region Entity & DTO
+            //KhuVucKhoTong
+            CreateMap<KhuVucKhoTong, KhuVucKhoTongDTO>()
+             .ForMember(dm => dm.tenkhotong, vm => vm.MapFrom(vmf => vmf.KhoTong != null ? vmf.KhoTong.ten : "-"));
+            CreateMap<KhuVucKhoTongDTO, KhuVucKhoTong>();
+
             //KhoTong
             CreateMap<KhoTong, KhoTongDTO>();
             CreateMap<KhoTongDTO, KhoTong>();

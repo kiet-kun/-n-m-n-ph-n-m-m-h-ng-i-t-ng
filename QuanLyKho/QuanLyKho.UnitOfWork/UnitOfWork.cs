@@ -17,6 +17,7 @@ using QuanLyKho.Repository.UnitOfMeasure;
 using QuanLyKho.Repository.User;
 using QuanLyKho.Repository.NhaCungCap;
 using QuanLyKho.Repository.KhoTong;
+using QuanLyKho.Repository.KhuVucKhoTong;
 
 namespace QuanLyKho.UnitOfWork
 {
@@ -41,7 +42,17 @@ namespace QuanLyKho.UnitOfWork
         private IUserRepository iUserRepository;
         private INhaCungCapRepository iNhaCungCapRepository;
         private IKhoTongRepository iKhoTongRepository;
+        private IKhuVucKhoTongRepository iKhuVucKhoTongRepository;
 
+        public IKhuVucKhoTongRepository KhuVucKhoTongRepository
+        {
+            get
+            {
+                if (iKhuVucKhoTongRepository == null)
+                    iKhuVucKhoTongRepository = new KhuVucKhoTongRepository(_context);
+                return iKhuVucKhoTongRepository;
+            }
+        }
         public IKhoTongRepository KhoTongRepository
         {
             get
